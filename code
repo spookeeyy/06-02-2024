@@ -1,0 +1,25 @@
+import turtle
+
+turtle.speed(0)  # Fastest speed
+turtle.bgcolor("black")
+
+# Draw outer circle
+turtle.color("white")
+turtle.begin_fill()
+turtle.circle(200)
+turtle.end_fill()
+
+# Draw partial eclipse
+turtle.penup()
+turtle.goto(-100, 150)
+turtle.pendown()
+turtle.color("black")
+turtle.begin_fill()
+turtle.goto(100, 150)
+turtle.goto(100, 200)
+turtle.goto(-100, 200)
+turtle.goto(-100, 150)
+turtle.end_fill()
+
+turtle.hideturtle()
+turtle.done()
